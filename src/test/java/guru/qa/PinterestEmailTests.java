@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class PinterestEmailTests {
 
-    @ValueSource(strings = {"test.mail.com", "тест@mail.com", "te st@mail.com"})
+    @ValueSource(strings = {"test.mail.com", "тест@mail.com", "te st@mail.com", "тест@mail.com", "te$t@mail.com", "test@mailcom"})
     @ParameterizedTest(name = "Отображение сообщения об ошибке при вводе мейла {0} при регистрации на pinterest.ru")
     void wrongEmailForRegistrationTest(String email) {
         open("https://www.pinterest.ru/");
