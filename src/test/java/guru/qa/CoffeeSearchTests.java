@@ -10,12 +10,12 @@ import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class CoffeeSearchTest {
+public class CoffeeSearchTests {
 
     static Stream<Arguments> relevantSearchResults() {
         return Stream.of(
                 Arguments.of("Робуста", List.of("Весь кофе", "Кофе", "Классический", "Ароматизированный", "Кофе в пачках", "ТОП-наборы")),
-                Arguments.of("Ямайка Блю Маунтин", List.of("Весь кофе", "Классический","Кофе", "Кофе в пачках", "Все подарки", "Чайно-кофейные"))
+                Arguments.of("Ямайка Блю Маунтин", List.of("Весь кофе", "Классический", "Кофе", "Кофе в пачках", "Все подарки", "Чайно-кофейные"))
         );
     }
 
