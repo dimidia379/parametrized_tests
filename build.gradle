@@ -8,6 +8,9 @@ repositories {
 
 dependencies {
     testImplementation(
+            'org.seleniumhq.selenium:selenium-java:3.141.59',
+            'org.aeonbits.owner:owner:1.0.4',
+            'org.assertj:assertj-core:3.21.0',
             'commons-io:commons-io:2.11.0',
             'com.codeborne:pdf-test:1.7.0',
             'com.codeborne:xls-test:1.2',
@@ -20,4 +23,5 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
 }
